@@ -1,0 +1,32 @@
+#include<iostream>
+
+using namespace std;
+
+int Pivotele(int arr[],int n){
+    int s=0, e=n-1,mid;
+    mid=s+(e-s)/2;
+
+    while(s<e)
+    {
+        if(arr[mid]>=arr[0]){
+            s=mid+1;
+        }
+        else{
+            e=mid;
+
+        }
+
+        mid=s+(e-s)/2;
+
+    }
+    return s;
+
+
+}
+
+int main()
+{
+    int arr[6]={5,10,15,6,2,3};
+    cout << "Pivot Element at position : "<< Pivotele(arr,6);
+    return 0;
+}
