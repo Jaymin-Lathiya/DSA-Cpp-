@@ -57,6 +57,7 @@ void print(Node *tail)
 {
 
     Node *temp = tail;
+         // if list is empty
 
     if (tail == NULL)
     {
@@ -75,6 +76,7 @@ void print(Node *tail)
 
 void deleteNode(Node *&tail, int value)
 {
+        // if list is empty
 
     if (tail == NULL)
     {
