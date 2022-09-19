@@ -22,7 +22,7 @@ public:
             delete next;
             next = NULL;
         }
-        cout << " memory is free for node with data " << value << endl;
+        cout << " memory is free for node with data :" << value << endl;
     }
 };
 
@@ -64,6 +64,8 @@ void print(Node *tail)
         cout << "List is Empty " << endl;
         return;
     }
+        // for non-empty List
+
 
     do
     {
@@ -85,7 +87,8 @@ void deleteNode(Node *&tail, int value)
     }
     else
     {
-
+      // for non-empty List
+  
         Node *prev = tail;
         Node *curr = prev->next;
 
@@ -118,6 +121,7 @@ bool isCircularList(Node *head)
     {
         return true;
     }
+    
 
     Node *temp = head->next;
     while (temp != NULL && temp != head)
@@ -189,7 +193,7 @@ int main()
 
     if (isCircularList(tail))
     {
-        cout << " Linked List is Circular in nature" << endl;
+        cout <<" Linked List is Circular" << endl;
     }
     else
     {
