@@ -1,0 +1,9 @@
+follows LIFO manner
+where a new element is added at one end (top) and an element is removed from that end only.
+
+built-in function of Stack in STL:
+
+top() – Returns a reference to the top most element of the stack  
+empty() – Returns whether the stack is empty 
+push(5) – Adds the element (5) at the top of the stack  
+pop() – Deletes the top most element of the stack  
